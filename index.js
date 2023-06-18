@@ -1,5 +1,5 @@
 
-var toggle = () => {
+const toggle = () => {
     document.querySelector('.dropcontent').classList.toggle('visible');
 };
 
@@ -17,18 +17,18 @@ window.onclick = (event) => {
                 opendropdown.classList.remove('visible');
             }
         }
-    }else {
+    } else {
         console.log('Bonjour');
     }
 };
 
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
-        console.log(entry);
+        // console.log(entry);
         if (entry.isIntersecting) {
             entry.target.classList.add('show')
         } else {
-            entry.target.classList.remove('sow')
+            entry.target.classList.remove('show')
         }
     })
 })

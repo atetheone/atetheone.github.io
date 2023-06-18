@@ -4,18 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="portfolio">
     <title>My portfolio</title>
-    <link 
+    <!-- <link 
         rel="stylesheet" 
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" 
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" 
         crossorigin="anonymous" 
         referrerpolicy="no-referrer" 
-    />
+    /> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="lawrencium-gd">
+<body
     <header id="home">
         <nav id="navbar">
             <div id="logo-name">
@@ -29,79 +30,75 @@
                     <li><a href="#projects">My projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
-                <div class="icon-ham"><button class="dropbtn" onclick="toggle()"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></button></div>
+                <div class="icon-ham"><button aria-label="Click me to display the menu" type="menu" class="dropbtn" onclick="toggle()"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></button></div>
 
             </div>
         </nav>
-        <section id="welcome-section" class="preview">
-            <p>
-                <h1>Hey, I am <span class="name">Até Tougué Aristide</span>. <br>
-                <span class="speciality line-1 anim-typewriter">Full Stack Developer</span>
-                </h1>
-            </p>
+        <section class="welcome-section">
+            <div class="welcome-content">
+                <h2>Hey, I am Até Tougué Aristide</h2>
+                <h2 class="title">Full Stack Developer</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    Deleniti possimus dolorum labore architecto nulla eos, nisi 
+                    alias dolores nostrum quod, ea fugit ut non? Doloremque 
+                    reiciendis aspernatur dolor ab doloribus!
+                </p>
+                <a href="mailto:atevirran@gmail.com" class="button-22 hire-me">Hire me</a>
+            </div>
+            <div class="welcome-right"></div>
         </section>
     </header>
     <section class="section hidden" id="about">
         <div class="resume">
             <div class="identity">
-                <!-- <div class="id">
-                    <div class="img-div">
-                        <i class="fa-solid fa-user-tie fa-5x"></i>
-                    </div>
-                    <div class="profile">
-                        <p><span class="prof-title">Name:</span>Até Tougué Aristide</p>
-                        <p><span class="prof-title">Profile:</span>Full Stack Developer</p>
-                        <p><span class="prof-title">Email:</span>atevirran@gmail.com</p>
-                        <p><span class="prof-title">Phone:</span>(237) 690 626 678</p>
-                    </div>
-                </div> -->
                 <h2 class="fa-3x">Tech stack</h2>
                 <div class="skills">
                     <div class="skill">
                         <i class="devicon-javascript-plain colored fa-3x"></i>
-                        <h5 class="skill-name">JavaScript</h3>
+                        <h3 class="skill-name">JavaScript</h3>
                     </div>
                     <div class="skill">
                         <i class="devicon-typescript-plain colored fa-3x"></i>
-                        <h5 class="skill-name">TypeScript</h3>
+                        <h3 class="skill-name">TypeScript</h3>
                     </div>
                     <div class="skill">
                         <i class="devicon-bootstrap-plain colored fa-3x"></i>
-                        <h5 class="skill-name">Bootstrap</h3>
+                        <h3 class="skill-name">Bootstrap</h3>
                     </div>
                     <div class="skill">
                         <i class="devicon-nodejs-plain colored fa-3x"></i>
-                        <h5 class="skill-name">NodeJS</h3>
+                        <h3 class="skill-name">NodeJS</h3>
                     </div>
                     <div class="skill">
                         <i class="devicon-angularjs-plain colored fa-3x"></i>
           
-                        <h5 class="skill-name">Angular</h3>
+                        <h3 class="skill-name">Angular</h3>
                     </div>
                     <div class="skill">  
                         <i class="devicon-express-original fa-3x"></i>
-                        <h5 class="skill-name">Express</h3>
+                        <h3 class="skill-name">Express</h3>
                     </div>
-                    <div c5ass="skill">
+                    <div class="skill">
                         <i class="devicon-nestjs-plain colored fa-3x"></i>
-                        <h5 class="skill-name">NestJS</h3>
+                        <h3 class="skill-name">NestJS</h3>
                     </div>
                     <div class="skill">
                         <i class="devicon-mongodb-plain-wordmark fa-3x"></i>
-                        <h5 class="skill-name">MongoDB</h3>
+                        <h3 class="skill-name">MongoDB</h3>
                     </div>
                     
                     <div class="skill">
                         <i class="devicon-python-plain colored fa-3x"></i>
-                        <h5 class="skill-name">Python</h3>
+                        <h3 class="skill-name">Python</h3>
                     </div>
                     <div class="skill">
                         <i class="devicon-mysql-plain colored fa-3x"></i>
-                        <h5 class="skill-name">MySQL</h3>
+                        <h3 class="skill-name">MySQL</h3>
                     </div>
                     <div class="skill">
                         <i class="fa-brands fa-git fa-3x"></i>
-                        <h5 class="skill-name">Git</h3>
+                        <h3 class="skill-name">Git</h3>
                     </div>
                 </div>
             </div>
@@ -222,7 +219,7 @@
             <a href="https://ate-advice-gen.herokuapp.com/" target="_blank" class="project">
                 <div class="project-content">
                     <div class="img-wrapper">
-                        <img src="./assets/advice.png" alt="" srcset="">
+                        <img src="" alt="advice-gen" srcset="">
                     </div>
                 </div>
                 <h3 class="project-title">Advice generator</h3>
@@ -239,26 +236,26 @@
                 </div>
                 <h3 class="project-title">Tribute Page</h3>
             </a> -->
-            <a href="https://atetheone.github.io/landing_page/" target="_blank" class="project">
+            <a href="https://www.github.com/atetheone/landing_page/" target="_blank" class="project">
                 <div class="project-content">
                     <div class="img-wrapper">
-                        <img src="./assets/landing_template.png" alt="" srcset="">
+                        <img alt="landing_template.png" src="" srcset="">
                     </div>
                 </div>
                 <h3 class="project-title">Landing page template</h3>
             </a>
-            <a href="https://atetheone.github.io/survey-form/" target="_blank" class="project">
+            <a href="https://www.github.com/atetheone/survey-form/" target="_blank" class="project">
                 <div class="project-content">
                     <div class="img-wrapper">
-                        <img src="./assets/survey-form.png" alt="" srcset="">
+                        <img alt="survey-form.png" src="" srcset="">
                     </div>
                 </div>
                 <h3 class="project-title">Survey form template</h3>
             </a>
-            <a href="https://atetheone.github.io/technical-documentation/" target="_blank" class="project">
+            <a href="https:www//github.com/atetheone/technical-documentation/" target="_blank" class="project">
                 <div class="project-content">
                     <div class="img-wrapper">
-                        <img src="./assets/tech_doc.png" alt="" srcset="">
+                        <img alt="tech_doc.png" src="" srcset="">
                     </div>
                 </div>
                 <h3 class="project-title">Technical documentation</h3>
@@ -272,11 +269,11 @@
             <!-- <a href="facebook.com" class=" brands facebook">
                 <i class="fab fa-facebook-square"></i>Facebook
             </a> -->
-            <a href="github.com/atetheone" target="_blank" id="profile-link" class="github brands">
+            <a href="https://www.github.com/atetheone" target="_blank" id="profile-link" class="github brands">
                 <i class="fab fa-github"></i>
                 Github
             </a>
-            <a href="https://linkedin.com/in/atetheone" class="brands linkedin">
+            <a href="https://www.linkedin.com/in/atetheone" class="brands linkedin">
                 <i class="fab fa-linkedin"></i>
                 LinkedIn
             </a>
