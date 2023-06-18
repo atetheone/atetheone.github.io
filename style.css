@@ -1,7 +1,7 @@
 @import "responsive.css";
 @import "node_modules/@fortawesome/fontawesome-free/css/all.min.css";
 /* @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;500;600;700&display=swap"); */
-/* @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk"); */
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk");
 
 
 *, *::before, *::after {
@@ -62,10 +62,22 @@ header {
   display: flex;
 }
 
+a.logo {
+	width: 2.5em;
+	height: 2em;
+	background-image: url(assets/png/logo-no-background.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	position: relative;
+	top: -10px;
+
+}
+
 nav {
 	margin: 10px 0 10px 0;
   height: 3.5em;
-  width: 97%;
+  width: calc(100% - 40px);
   display: flex;
   justify-content: space-between;
   background-color: rgb(64, 83, 97);
@@ -120,7 +132,7 @@ nav {
 
 .welcome-section {
   display: flex;
-	flex-wrap: wrap;
+	flex-wrap: nowrap;
   align-items: center;
   min-height: 100vh;
 	width: 100%;
@@ -173,7 +185,7 @@ nav {
   align-items: center;
   appearance: button;
   background-color: #fcdab7;
-  border-radius: 8px;
+  border-radius: 5px;
   border-style: none;
   box-shadow: rgba(255, 255, 255, 0.26) 0 1px 2px inset;
   box-sizing: border-box;
@@ -214,7 +226,7 @@ nav {
 
 	background-position: center;
 	border-radius: 10px;
-	min-width: 37.5%;
+	min-width: 40%;
 	/* max-width: 100%; */
 	height: 77vh;
 	position: relative;
@@ -275,7 +287,7 @@ nav {
 
 .section {
   min-height: 85vh;
-  margin: 3vmin 3vmin 5vmin 3vmin;
+  margin: 3vmin 0vmin 5vmin 0vmin;
   border-radius: 10px;
   padding: 4em 4vmin;
   background-color: rgba(30, 95, 116, 0.2);

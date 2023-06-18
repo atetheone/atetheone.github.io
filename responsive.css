@@ -90,10 +90,28 @@
     }
 }
 
+@media only screen and (max-width: 650px) {
+    .welcome-content {
+        width: 100% !important;
+        margin: 0 !important;
+    }
+    .welcome-right {
+        display: none !important;
+    }
+    
+}
+
 
 @media only screen and (max-width: 450px) {
     .service {
         width: 100%;
         padding: 4vmin !important;
+    }
+
+}
+
+@media only screen and (max-width: 390px) { 
+    .welcome-content {
+        height: fit-content !important;
     }
 }
