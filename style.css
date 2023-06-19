@@ -215,7 +215,7 @@ nav {
 }
 
 .contact-links {
-  margin-top: auto;
+  margin-top: auto !important;
   display: flex;
 }
 
