@@ -47,8 +47,8 @@
     width: 3em;
     height: 3em;
     border-radius: 5px;
-    background-color: #fcdab7;
-    color: rgba(30, 95, 116, 1);
+    background-color: var(--accent);
+    color: #fff;
     cursor: pointer;
     position: relative;
     top: -8px;

@@ -23,6 +23,7 @@
     />
     <link rel="stylesheet" href="style.css" />
     <script src="index.js" defer></script>
+    <title>My Portfolio</title>
   </head>
   <body class="lawrencium-gd">
     <header id="home">
@@ -34,7 +35,7 @@
           <ul class="dropcontent">
             <li><a class="nav-link" href="#home">Home</a></li>
             <li><a class="nav-link" href="#about">About</a></li>
-            <li><a class="nav-link" href="#services">Services</a></li>
+            <!-- <li><a class="nav-link" href="#services">Services</a></li> -->
             <li><a class="nav-link" href="#projects">My projects</a></li>
             <li><a class="nav-link" href="#contact">Contact</a></li>
           </ul>
@@ -59,37 +60,48 @@
             development. Learning new technologies and building projects is what
             I love to do.
           </p>
-          <a href="mailto:atevirran@gmail.com" class="button-22 hire-me"
-            >Hire me</a
-          >
+          <a href="mailto:atevirran@gmail.com" class="hire-me">Hire me</a>
           <div class="contact-links">
-            <a
-              href="https://twitter.com/atetheone"
-              target="_blank"
-              arial-label="Twitter"
-              ><i class="fa-brands fa-twitter-square"></i
-            ></a>
-            <a
-              href="https://github.com/atetheone"
-              target="_blank"
-              arial-label="Github"
-              ><i class="fa-brands fa-github-square"></i
-            ></a>
-            <a
-              href="https://www.linkedin.com/in/atetheone"
-              target="_blank"
-              aria-label="Linkedin"
-              ><i class="fa-brands fa-linkedin"></i
-            ></a>
+            <a href="https://twitter.com/atetheone" target="_blank">
+              <i class="fa-brands fa-twitter-square"></i>
+              <span class="sr-only">Go to my Twitter profile</span>
+            </a>
+            <a href="https://github.com/atetheone" target="_blank">
+              <i class="fa-brands fa-github-square"></i>
+              <span class="sr-only">Go to my Github profile</span>
+            </a>
+            <a href="https://www.linkedin.com/in/atetheone" target="_blank">
+              <i class="fa-brands fa-linkedin"></i>
+              <span class="sr-only">Go to my Linkedin profile</span>
+            </a>
           </div>
         </div>
         <div class="welcome-right"></div>
       </section>
     </header>
     <section class="section hidden" id="about">
+      <div class="about-me">
+        <h2 class="title-about">About me</h2>
+        <div class="about-content">
+          <div class="about-img">
+            <img src="" alt="ate" />
+          </div>
+          <div class="about-text">
+            <p>
+              I am a student in Master's degree at the University of Douala, I'm
+              a junior software developer with hunger to learn and build
+              products that can impact a larger number of people. Fun facts: I'm
+              a big fan of Cycling and Japanese anime
+            </p>
+            <a href="assets/pdf/CV.pdf" class="download" download
+              >Download CV</a
+            >
+          </div>
+        </div>
+      </div>
       <div class="resume">
         <div class="identity">
-          <h2 class="fa-2x">Tech stack</h2>
+          <h2 class="">Tech stack</h2>
           <div class="skills">
             <div class="skill">
               <i class="devicon-javascript-plain colored fa-2x"></i>
@@ -109,15 +121,13 @@
             </div>
             <div class="skill">
               <i class="devicon-angularjs-plain colored fa-2x"></i>
-              <!-- <i class="fa-brands fa-angular"></i> -->
-
               <h3 class="skill-name">Angular</h3>
             </div>
             <div class="skill">
               <i class="devicon-express-original fa-2x"></i>
               <h3 class="skill-name">Express</h3>
             </div>
-            <div c5ass="skill">
+            <div class="skill">
               <i class="devicon-nestjs-plain colored fa-2x"></i>
               <h3 class="skill-name">NestJS</h3>
             </div>
@@ -141,171 +151,101 @@
           </div>
         </div>
       </div>
-      <div class="about-me">
-        <div class="title-about-wrapper">
-          <h2 class="title-about">About me</h2>
-        </div>
-        <p>
-          Student in Master's degree at the University of Douala, I'm a junior
-          software developer with hunger to learn and build products that can
-          impact a larger number of people. Fun facts: I'm a big fan of Cycling
-          and Japanese anime
-        </p>
-      </div>
     </section>
-
-    <section class="section hidden" id="services">
-      <h2 class="title-section">SERVICES</h2>
-      <p class="description">Lorem ipsum dolor sit amet consectetur</p>
-      <div class="items">
-        <div class="service">
-          <div class="service-icone">
-            <div class="icone-wrapper">
-              <i class="fa-solid fa-cubes fa-3x"></i>
-            </div>
-          </div>
-          <div class="service-content">
-            <h3 class="service-name">Web Design</h3>
-            <p class="content">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae,
-              non nemo sequi pariatur doloribus quos, ut, eum debitis officia
-              tempore libero possimus optio. Consequatur similique nesciunt illo
-              esse accusamus quibusdam?
-            </p>
-          </div>
-        </div>
-        <div class="service">
-          <div class="service-icone">
-            <div class="icone-wrapper">
-              <i class="fa-solid fa-laptop-code fa-3x"></i>
-            </div>
-          </div>
-          <div class="service-content">
-            <h3 class="service-name">Web Development</h3>
-            <p class="content">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae,
-              non nemo sequi pariatur doloribus quos, ut, eum debitis officia
-              tempore libero possimus optio. Consequatur similique nesciunt illo
-              esse accusamus quibusdam?
-            </p>
-          </div>
-        </div>
-        <div class="service">
-          <div class="service-icone">
-            <div class="icone-wrapper">
-              <i class="fas fa-3x fa-mobile-screen"></i>
-            </div>
-          </div>
-          <div class="service-content">
-            <h3 class="service-name">Responsive Design</h3>
-            <p class="content">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae,
-              non nemo sequi pariatur doloribus quos, ut, eum debitis officia
-              tempore libero possimus optio. Consequatur similique nesciunt illo
-              esse accusamus quibusdam?
-            </p>
-          </div>
-        </div>
-        <div class="service">
-          <div class="service-icone">
-            <div class="icone-wrapper">
-              <i class="fa-solid fa-database fa-3x"></i>
-            </div>
-          </div>
-          <div class="service-content">
-            <h3 class="service-name">Database Deployment</h3>
-            <p class="content">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae,
-              non nemo sequi pariatur doloribus quos, ut, eum debitis officia
-              tempore libero possimus optio. Consequatur similique nesciunt illo
-              esse accusamus quibusdam?
-            </p>
-          </div>
-        </div>
-        <div class="service">
-          <div class="service-icone">
-            <div class="icone-wrapper">
-              <i class="fa-solid fa-file-shield fa-3x"></i>
-            </div>
-          </div>
-          <div class="service-content">
-            <h3 class="service-name">Data Security</h3>
-            <p class="content">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae,
-              non nemo sequi pariatur doloribus quos, ut, eum debitis officia
-              tempore libero possimus optio. Consequatur similique nesciunt illo
-              esse accusamus quibusdam?
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <section class="section hidden" id="projects">
       <h2 class="title-section">My Projects</h2>
       <p class="description">There are some of my projects</p>
       <div class="my-projects">
-        <!-- <a href="#" target="_blank" class="project">
-                <div class="project-content">
-                    <div class="img-wrapper">
-                        <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg" alt="" srcset="">
-                    </div>
-                </div>
-                <h3 class="project-title">Chat app</h3>
-            </a> -->
-        <a
-          href="https://ate-advice-gen.herokuapp.com/"
-          target="_blank"
-          class="project"
-        >
+        <div class="project">
           <div class="project-content">
             <div class="img-wrapper">
               <img src="" alt="advice-gen" srcset="" />
             </div>
           </div>
-          <h3 class="project-title">Advice generator</h3>
-          <p>
-            App that displays randomly some advice through an API Built with
-            Angular & Bootstrap
-          </p>
-        </a>
-      
-        <a
-          href="https://www.github.com/atetheone/landing_page/"
-          target="_blank"
-          class="project"
-        >
+          <div class="project-desc">
+            <h3 class="project-title">Advice generator</h3>
+            <p>
+              App that displays randomly some advice through an API Built with
+              Angular & Bootstrap
+            </p>
+            <div class="project-links">
+              <a href="https://github.com/atetheone">
+                <i class="fa-brands fa-github"></i>Github
+              </a>
+              <a href="https://ate-advice-gen.herokuapp.com/">
+                <i class="fa-solid fa-external-link"></i>
+                Live
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project">
           <div class="project-content">
             <div class="img-wrapper">
               <img alt="landing_template.png" src="" srcset="" />
             </div>
           </div>
-          <h3 class="project-title">Landing page template</h3>
-        </a>
-        <a
-          href="https://www.github.com/atetheone/survey-form/"
-          target="_blank"
-          class="project"
-        >
+          <div class="project-desc">
+            <h3 class="project-title">Landing page template</h3>
+            <p>A landing page built with HTML, CSS, for presenting an online business</p>
+            <div class="project-links">
+              <a href="https://github.com/atetheone">
+                <i class="fa-brands fa-github"></i>Github
+              </a>
+              <a href="#">
+                <i class="fa-solid fa-external-link"></i>
+                Live
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project">
           <div class="project-content">
             <div class="img-wrapper">
               <img alt="survey-form.png" src="" srcset="" />
             </div>
+
+            <div class="project-desc">
+              <h3 class="project-title">Survey form template</h3>
+              <p>
+                Survey form template for a fictional company built with HTML,
+                CSS
+              </p>
+              <div class="project-links">
+                <a href="https://www.github.com/atetheone/survey-form">
+                  <i class="fa-brands fa-github"></i>Github
+                </a>
+                <a href="#">
+                  <i class="fa-solid fa-external-link"></i>
+                  Live
+                </a>
+              </div>
+            </div>
           </div>
-          <h3 class="project-title">Survey form template</h3>
-        </a>
-        <a
-          href="https:www//github.com/atetheone/technical-documentation/"
-          target="_blank"
-          class="project"
-        >
+        </div>
+
+        <div class="project">
           <div class="project-content">
             <div class="img-wrapper">
               <img alt="tech_doc.png" src="" srcset="" />
             </div>
           </div>
-          <h3 class="project-title">Technical documentation</h3>
-        </a>
+          <div class="project-desc">
+            <h3 class="project-title">Technical documentation</h3>
+            <p>
+              Technical documentation page built with HTML, CSS for a
+              programming language
+            </p>
+            <div class="project-links">
+              <a href="https:www//github.com/atetheone/technical-documentation">
+                <i class="fa-brands fa-github"></i>Github
+              </a>
+              <a href="#"> <i class="fa-solid fa-external-link"></i>Live </a>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -335,7 +275,7 @@
     <footer class="section hidden">
       <p class="author">
         © Created by Até Tougué Aristide <br />
-        2022 All rights reserved
+        2023 All rights reserved
       </p>
     </footer>
   </body>

@@ -1,0 +1,9 @@
+:root {
+  --primary: #1D267D/*#0C134F*/;
+  --secondary: #0C134F/*#1D267D*/;
+  --secondary-light: /*#1a1e3e;*/#0C134F;
+  --tertiary: #5C469C;
+  /* --contrast: rgb(64, 83, 97, .4); */
+  --accent: #E74C3C;/*#fcdab7;*/
+}
+
