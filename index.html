@@ -24,6 +24,8 @@
     />
     <link rel="stylesheet" href="style.css" />
     <script src="index.js" defer></script>
+    <script type="commonjs" src="mail.js" defer></script>
+    </script>
     <title>My Portfolio</title>
   </head>
   <body class="lawrencium-gd">
@@ -55,13 +57,18 @@
       <section class="welcome-section">
         <div class="welcome-content">
           <h2>Hey, I am Até Tougué Aristide</h2>
-          <h2 class="title">Full Stack Developer</h2>
+          <h2 class="title">Full Stack Developer </h2>
           <p>
-            I am a junior full stack developer with a passion for web
+            I am a full stack developer with a passion for web
             development. Learning new technologies and building projects is what
-            I love to do.
+            I love to do. I am from <span class="highlight">Chad</span>.
           </p>
-          <a href="mailto:atevirran@gmail.com" class="button-28">Hire me</a>
+          <div class="ctas">
+            <a href="#contact" class="cta-1">Contact me</a>
+            <a href="#projects" class="cta-2">Check my projects</a>
+          </div>
+          <!-- 
+          <a href="#projects" class="cta-1">Check my projects</a> -->
           <div class="contact-links">
             <a href="https://twitter.com/atetheone" target="_blank">
               <i class="fa-brands fa-twitter-square"></i>
@@ -85,17 +92,20 @@
         <h2 class="title-about">About me</h2>
         <div class="about-content">
           <div class="about-img">
-            <img src="" alt="ate" />
+            <!-- <img src="" alt="ate" /> -->
           </div>
           <div class="about-text">
             <p>
-              I am a student in Master's degree at the University of Douala, I'm
-              a junior software developer with hunger to learn and build
-              products that can impact a larger number of people. Fun facts: I'm
-              a big fan of Cycling and Japanese anime
+              I am a graduate student from the University of Douala in <span class="highlight">Computer Science</span>. I'm
+              a passionate software developer who believes in the <span class="highlight">magic</span> of turning ideas into 
+              reality through <span class="highlight">elegant lines of code</span>. With a love of both 
+              <span class="highlight">frontend</span> and <span class="highlight">backend</span>
+              development, I am always looking for <span class="highlight">new challenges</span> to learn and grow as a developer.
+              When I am not busy coding, you can find me <span class="highlight">reading</span>&#128214 tech articles or books, watching 
+              anime (One Piece is my favorite &#128525), doing home workout , or playing video games.
             </p>
-            <a href="assets/pdf/CV.pdf" class="download" download
-              >Download CV</a
+            <a href="assets/pdf/CV.pdf" class="download cta-1" download
+              >Download my resumé</a
             >
           </div>
         </div>
@@ -266,11 +276,43 @@
           <i class="fab fa-linkedin"></i>
           LinkedIn
         </a>
-        <a href="mailto:atevirran@gmail.com" class="brands">
-          <i class="fas fa-at"></i>
-          Send me a mail
-        </a>
       </div>
+
+      <!-- A contact me form with name subject and message -->
+      <form>
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <input
+            type="text"
+            name="subject"
+            id="subject"
+            placeholder="Enter your subject"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea
+            name="message"
+            id="message"
+            cols="30"
+            rows="10"
+            placeholder="Enter your message"
+            required
+          ></textarea>
+        </div>
+        <button type="submit" class="cta-1 send">Send</button>
+      </form>
     </section>
 
     <footer class="section hidden">
