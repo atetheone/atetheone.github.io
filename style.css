@@ -52,7 +52,7 @@ a.nav-link:hover::before {
 }
 
 header {
-  min-height: 100svh;
+  min-height: 100vh;
   /* background-image: url("assets/ATE.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -141,7 +141,7 @@ nav {
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
-  min-height: 95svh;
+  min-height: 95vh;
   width: 100%;
   text-align: center;
   font-size: 2em;
@@ -152,7 +152,7 @@ nav {
   border-radius: 10px;
   width: 60%;
   max-width: 100%;
-  min-height: 77svh;
+  min-height: 77vh;
   margin-right: 20px;
   position: relative;
   top: 2.5rem;
@@ -377,7 +377,7 @@ a.hire-me {
   border-radius: 10px;
   min-width: 40%;
   /* max-width: 100%; */
-  height: 77svh;
+  height: 77vh;
   position: relative;
   top: 2.5rem;
 }
@@ -437,7 +437,7 @@ a.hire-me {
 }
 
 .section {
-  min-height: 85svh;
+  min-height: 85vh;
   margin: 0 0vmin 5vmin 0vmin;
   border-radius: 10px;
   padding: 4em 4vmin;
@@ -704,7 +704,7 @@ footer {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2em;
   text-align: center;
-  min-height: 20svh !important;
+  min-height: 20vh !important;
   color: #f0f0f0;
   font-size: 1.2em;
   background: linear-gradient(to right,
