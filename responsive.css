@@ -99,6 +99,16 @@
   }
 }
 
+@media only screen and (max-width: 500px) {
+  .my-projects {
+    grid-template-columns: 1fr !important;
+  }
+
+  .project {
+    width: 100% !important;
+  }
+}
+
 @media only screen and (max-width: 450px) {
   .welcome-section {
     height: 90vh !important;
@@ -106,5 +116,27 @@
   .service {
     width: 100%;
     padding: 4vmin !important;
+  }
+
+  .projects {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+@media only screen and (max-width: 410px) {
+  /* .welcome-content {
+    
+  } */
+
+  .welcome-content h2 {
+    font-size: 1.2rem !important;
+  }
+
+  .welcome-content p {
+    margin: 1.5em 0 0.5em 0 !important;
+  }
+  
+  .ctas .cta-2 {
+    margin-top: 10px !important;
   }
 }
