@@ -4,10 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="portfolio" />
+    <meta name="description" content="ATE TOUGUE ARISTIDE, Full Stack Developer, portfolio" />
     <link rel=" icon" href="assets/png/logo-color.png" type="image/x-icon" />
-    <!-- Link for the google fonts "space grotesk"-->
-
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -25,10 +23,9 @@
     <link rel="stylesheet" href="style.css" />
     <script src="index.js" defer></script>
     <script type="commonjs" src="mail.js" defer></script>
-    </script>
-    <title>My Portfolio</title>
+    <title>ATE TOUGUE ARISTIDE - Full Stack Developer</title>
   </head>
-  <body class="lawrencium-gd">
+  <body>
     <header id="home">
       <nav id="navbar">
         <div id="logo-name">
@@ -38,14 +35,14 @@
           <ul class="dropcontent">
             <li><a class="nav-link" href="#home">Home</a></li>
             <li><a class="nav-link" href="#about">About</a></li>
-            <!-- <li><a class="nav-link" href="#services">Services</a></li> -->
+            <li><a class="nav-link" href="#skills">Skills</a></li>
             <li><a class="nav-link" href="#projects">My projects</a></li>
             <li><a class="nav-link" href="#contact">Contact</a></li>
           </ul>
           <div class="icon-ham">
             <button
               aria-label="Click me to display the menu"
-              type="menu"
+              type="button"
               class="dropbtn"
               onclick="toggle()"
             >
@@ -56,12 +53,15 @@
       </nav>
       <section class="welcome-section">
         <div class="welcome-content">
-          <h2>Hey, I am Até Tougué Aristide</h2>
-          <h2 class="title">Full Stack Developer </h2>
+          <h2 class="name">
+            Hey, <br />
+            I am Até Tougué Aristide
+          </h2>
+          <h2 class="title">A Chadian <br> Full Stack Developer</h2>
           <p>
-            I am a full stack developer with a passion for web
-            development. Learning new technologies and building projects is what
-            I love to do. I am from <span class="highlight">Chad</span>.
+            I am a full stack developer with a passion for web development.
+            Learning new technologies and building projects is what I love to
+            do.
           </p>
           <div class="ctas">
             <a href="#contact" class="cta-1">Contact me</a>
@@ -70,15 +70,27 @@
           <!-- 
           <a href="#projects" class="cta-1">Check my projects</a> -->
           <div class="contact-links">
-            <a href="https://twitter.com/atetheone" target="_blank">
+            <a
+              href="https://twitter.com/atetheone"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <i class="fa-brands fa-twitter-square"></i>
               <span class="sr-only">Go to my Twitter profile</span>
             </a>
-            <a href="https://github.com/atetheone" target="_blank">
+            <a
+              href="https://github.com/atetheone"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <i class="fa-brands fa-github-square"></i>
               <span class="sr-only">Go to my Github profile</span>
             </a>
-            <a href="https://www.linkedin.com/in/atetheone" target="_blank">
+            <a
+              href="https://www.linkedin.com/in/atetheone"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <i class="fa-brands fa-linkedin"></i>
               <span class="sr-only">Go to my Linkedin profile</span>
             </a>
@@ -88,175 +100,284 @@
       </section>
     </header>
     <section class="section hidden" id="about">
-      <div class="about-me">
+      <div class="about-wrapper">
         <h2 class="title-about">About me</h2>
+        <div class="about-img">
+          <img
+            src="assets/png/my_pic.jpg"
+            alt="about me pic"
+            width="200"
+            height="200"
+          />
+        </div>
         <div class="about-content">
-          <div class="about-img">
-            <!-- <img src="" alt="ate" /> -->
-          </div>
-          <div class="about-text">
-            <p>
-              I am a graduate student from the University of Douala in <span class="highlight">Computer Science</span>. I'm
-              a passionate software developer who believes in the <span class="highlight">magic</span> of turning ideas into 
-              reality through <span class="highlight">elegant lines of code</span>. With a love of both 
-              <span class="highlight">frontend</span> and <span class="highlight">backend</span>
-              development, I am always looking for <span class="highlight">new challenges</span> to learn and grow as a developer.
-              When I am not busy coding, you can find me <span class="highlight">reading</span>&#128214 tech articles or books, watching 
-              anime (One Piece is my favorite &#128525), doing home workout , or playing video games.
-            </p>
-            <a href="assets/pdf/resume_tougue-aristide-ate.pdf" class="download cta-1" download
-              >Download my resumé</a
-            >
-          </div>
+          <p>
+            I am a graduate student from the University of Douala in
+            <span class="highlight">Computer Science</span>. I'm a passionate
+            software developer who believes in the
+            <span class="highlight">magic</span> of turning ideas into reality
+            through <span class="highlight">elegant lines of code</span>. With a
+            love of both <span class="highlight">frontend</span> and
+            <span class="highlight">backend</span> development, I am always
+            looking for <span class="highlight">new challenges</span> to learn
+            and grow as a developer. When I am not busy coding, you can find me
+            <span class="highlight">reading</span> &#128214; tech articles or
+            books, watching anime (One Piece is my favorite &#128525;), doing
+            home workout , or playing video games.
+          </p>
+          <a
+            href="assets/pdf/resume_tougue-aristide-ate.pdf"
+            class="download cta-1"
+            download
+            >Download my resume</a
+          >
         </div>
       </div>
-      <div class="resume">
-        <div class="identity">
-          <h2 class="">Tech stack</h2>
-          <div class="skills">
-            <div class="skill">
-              <i class="devicon-javascript-plain colored fa-2x"></i>
-              <h3 class="skill-name">JavaScript</h3>
-            </div>
-            <div class="skill">
-              <i class="devicon-typescript-plain colored fa-2x"></i>
-              <h3 class="skill-name">TypeScript</h3>
-            </div>
-            <div class="skill">
-              <i class="devicon-bootstrap-plain colored fa-2x"></i>
-              <h3 class="skill-name">Bootstrap</h3>
-            </div>
-            <div class="skill">
-              <i class="devicon-nodejs-plain colored fa-2x"></i>
-              <h3 class="skill-name">NodeJS</h3>
-            </div>
-            <div class="skill">
-              <i class="devicon-angularjs-plain colored fa-2x"></i>
-              <h3 class="skill-name">Angular</h3>
-            </div>
-            <div class="skill">
-              <i class="devicon-express-original fa-2x"></i>
-              <h3 class="skill-name">Express</h3>
-            </div>
-            <div class="skill">
-              <i class="devicon-nestjs-plain colored fa-2x"></i>
-              <h3 class="skill-name">NestJS</h3>
-            </div>
-            <div class="skill">
-              <i class="devicon-mongodb-plain-wordmark fa-2x"></i>
-              <h3 class="skill-name">MongoDB</h3>
-            </div>
+    </section>
+    <section class="section hidden" id="skills">
+      <h2 class="skills-title">My skills</h2>
 
-            <div class="skill">
-              <i class="devicon-python-plain colored fa-2x"></i>
-              <h3 class="skill-name">Python</h3>
-            </div>
-            <div class="skill">
-              <i class="devicon-mysql-plain colored fa-2x"></i>
-              <h3 class="skill-name">MySQL</h3>
-            </div>
-            <div class="skill">
-              <i class="fa-brands fa-git fa-2x"></i>
-              <h3 class="skill-name">Git</h3>
-            </div>
-          </div>
+      <div class="skills">
+        <div class="skill">
+          <i class="devicon-javascript-plain colored fa-2x"></i>
+          <h3 class="skill-name">JavaScript</h3>
+        </div>
+        <div class="skill">
+          <i class="devicon-typescript-plain colored fa-2x"></i>
+          <h3 class="skill-name">TypeScript</h3>
+        </div>
+        <div class="skill">
+          <i class="devicon-bootstrap-plain colored fa-2x"></i>
+          <h3 class="skill-name">Bootstrap</h3>
+        </div>
+        <div class="skill">
+          <i class="devicon-nodejs-plain colored fa-2x"></i>
+          <h3 class="skill-name">NodeJS</h3>
+        </div>
+        <div class="skill">
+          <i class="devicon-angularjs-plain colored fa-2x"></i>
+          <h3 class="skill-name">Angular</h3>
+        </div>
+        <div class="skill">
+          <i class="devicon-express-original fa-2x"></i>
+          <h3 class="skill-name">Express</h3>
+        </div>
+        <div class="skill">
+          <i class="devicon-nestjs-plain colored fa-2x"></i>
+          <h3 class="skill-name">NestJS</h3>
+        </div>
+        <div class="skill">
+          <i class="devicon-mongodb-plain-wordmark fa-2x"></i>
+          <h3 class="skill-name">MongoDB</h3>
+        </div>
+
+        <div class="skill">
+          <i class="devicon-python-plain colored fa-2x"></i>
+          <h3 class="skill-name">Python</h3>
+        </div>
+        <div class="skill">
+          <i class="devicon-mysql-plain colored fa-2x"></i>
+          <h3 class="skill-name">MySQL</h3>
+        </div>
+        <div class="skill">
+          <i class="devicon-socketio-original fa-2x"></i>
+          <h3 class="skill-name">Socket.IO</h3>
+        </div>
+        <div class="skill">
+          <i class="devicon-jest-plain fa-2x"></i>
+          <h3 class="skill-name">Jest</h3>
         </div>
       </div>
     </section>
     <section class="section hidden" id="projects">
       <h2 class="title-section">My Projects</h2>
-      <p class="description">There are some of my projects</p>
       <div class="my-projects">
         <div class="project">
-          <div class="project-content">
-            <div class="img-wrapper">
-              <img src="" alt="advice-gen" srcset="" />
-            </div>
-          </div>
-          <div class="project-desc">
-            <h3 class="project-title">Advice generator</h3>
-            <p>
-              App that displays randomly some advice through an API Built with
-              Angular & Bootstrap
-            </p>
-            <div class="project-links">
-              <a href="https://github.com/atetheone">
-                <i class="fa-brands fa-github"></i>Github
-              </a>
-              <a href="https://ate-advice-gen.herokuapp.com/">
-                <i class="fa-solid fa-external-link"></i>
-                Live
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="project">
-          <div class="project-content">
-            <div class="img-wrapper">
-              <img alt="landing_template.png" src="" srcset="" />
-            </div>
-          </div>
-          <div class="project-desc">
-            <h3 class="project-title">Landing page template</h3>
-            <p>A landing page built with HTML, CSS, for presenting an online business</p>
-            <div class="project-links">
-              <a href="https://github.com/atetheone">
-                <i class="fa-brands fa-github"></i>Github
-              </a>
-              <a href="#">
-                <i class="fa-solid fa-external-link"></i>
-                Live
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="project">
-          <div class="project-content">
-            <div class="img-wrapper">
-              <img alt="survey-form.png" src="" srcset="" />
-            </div>
-
-            <div class="project-desc">
-              <h3 class="project-title">Survey form template</h3>
-              <p>
-                Survey form template for a fictional company built with HTML,
-                CSS
-              </p>
-              <div class="project-links">
-                <a href="https://www.github.com/atetheone/survey-form">
-                  <i class="fa-brands fa-github"></i>Github
-                </a>
-                <a href="#">
-                  <i class="fa-solid fa-external-link"></i>
-                  Live
-                </a>
+          <h3 class="project-title">Chat app</h3>
+          <p class="project-desc">
+            A full stack chat application that allows you to
+            <span class="highlight">interact</span> with others and provides a
+            simple interface
+            <span class="highlight">to chat with connected users</span>. The
+            user has to be authenticated to access to the chat feature. The chat
+            feature is available in <span class="highlight"></span>real time
+            thanks to the <span class="highlight">Socket.IO</span>. When
+            connected, the messages stored in a
+            <span class="highlight">MongoDB</span> database are retrieved from
+            the chat server The frontend interface is built with
+            <span class="highlight">Angular</span> and the backend with Node.js
+            and Express.js. Backend APIs are tested with
+            <span class="highlight">Jest</span>.
+          </p>
+          <div class="project-footer">
+            <div class="tools">
+              <div class="icon-wrapper">
+                <i class="devicon-angularjs-plain colored"></i>
+              </div>
+              <div class="icon-wrapper">
+                <i class="devicon-nodejs-plain colored"></i>
+              </div>
+              <div class="icon-wrapper">
+                <i class="devicon-express-original colored"></i>
+              </div>
+              <div class="icon-wrapper">
+                <i class="devicon-socketio-original colored"></i>
+              </div>
+              <div class="icon-wrapper">
+                <i class="devicon-mongodb-plain-wordmark colored"></i>
+              </div>
+              <div class="icon-wrapper">
+                <i class="devicon-jest-plain colored"></i>
               </div>
             </div>
+            <a
+              href="https://github.com/atetheone"
+              rel="noopener noreferrer"
+              target="_blank"
+              class="cta-1"
+            >
+              <i class="fa-brands fa-github"></i>
+              <span class="sr-only">Source code</span>
+            </a>
           </div>
         </div>
 
         <div class="project">
-          <div class="project-content">
-            <div class="img-wrapper">
-              <img alt="tech_doc.png" src="" srcset="" />
+          <h3 class="project-title">Microshop - Microwarehouse app</h3>
+          <p class="project-desc">
+            A set of two applications: a
+            <span class="highlight">microwarehouse</span> and a
+            <span class="highlight">microshop</span>. The first app is a
+            microwarehouse application, which efficiently manages the addition
+            and retrieval of <span class="highlight">products</span> from the
+            warehouse based on customer orders. The second app, a microshop
+            application, provides a seamless ordering experience for customers,
+            allowing them to easily select their desired products and
+            <span class="highlight">track their order status</span>. <br />
+            Both of these applications boast a modern and intuitive user
+            interface, thanks to the implementation of
+            <span class="highlight">Angular</span> on the front-end. On the
+            back-end, I utilized <span class="highlight">NestJS</span> to ensure
+            robustness and scalability. One notable feature of these apps is the
+            integration of an
+            <span class="highlight">event-driven architecture</span> on the
+            backend side. This means that every action performed by users
+            <span class="highlight">triggers an event</span>, which is
+            automatically <span class="highlight">published</span> for listeners
+            to <span class="highlight">subscribe</span> to. This architecture
+            enhances efficiency and allows for seamless communication between
+            different components. To ensure the reliability and quality of these
+            applications, I employed <span class="highlight">Cypress</span> for
+            end-to-end testing. This powerful tool ensures that all
+            functionalities are
+            <span class="highlight">thoroughly tested</span> and guarantees a
+            <span class="highlight">smooth user experience</span>.
+          </p>
+          <div class="project-footer">
+            <div class="tools">
+              <div class="icon-wrapper">
+                <i class="devicon-angularjs-plain colored fa-2x"></i>
+              </div>
+              <div class="icon-wrapper">
+                <i class="devicon-nodejs-plain colored fa-2x"></i>
+              </div>
+              <div class="icon-wrapper">
+                <i class="devicon-nestjs-plain colored fa-2x"></i>
+              </div>
+              <div class="icon-wrapper">
+                <i class="devicon-mongodb-plain-wordmark colored fa-2x"></i>
+              </div>
+              <div class="icon-wrapper">
+                <img
+                  src="assets/png/cypress.png"
+                  alt="cypress icon"
+                  width="25"
+                  height="25"
+                />
+              </div>
             </div>
+            <a
+              href="https://github.com/atetheone"
+              rel="noopener noreferrer"
+              target="_blank"
+              class="cta-1"
+            >
+              <i class="fa-brands fa-github"></i>
+              <span class="sr-only">Source code</span>
+            </a>
           </div>
-          <div class="project-desc">
-            <h3 class="project-title">Technical documentation</h3>
-            <p>
-              Technical documentation page built with HTML, CSS for a
-              programming language
-            </p>
-            <div class="project-links">
-              <a href="https:www//github.com/atetheone/technical-documentation">
-                <i class="fa-brands fa-github"></i>Github
+        </div>
+
+        <div class="project">
+          <h3 class="project-title">Random users generator</h3>
+          <p class="project-desc">
+            This app is built using Angular and Bootstrap. It serves as a
+            platform to retrieve random users from the
+            <a class="external-link" href="https://randomuser.me"
+              >Random user generator</a
+            >
+            API. The app allows users to
+            <span class="highlight">delete existing users or add new ones</span>
+            . The user interface of the app is designed using
+            <span class="highlight">Bootstrap</span>, ensuring a responsive and
+            visually appealing layout. Users can view details such as name,
+            email, phone number, and address for each randomly generated user.
+            The app also provides functionality for deleting users. Users can
+            select any user from the list and remove them from the display. This
+            action update the local array where users generated are stored in.
+            Users have the ability to generate new users and add them to list to
+            the list. Additionnally, the user can performe
+            <span class="highlight">search</span> action on the list,
+            <span class="highlight">sort users by age</span>, or
+            <span class="highlight">filter by gender</span>. To optimize
+            performance and improve search engine optimization (SEO),
+            <span class="highlight">Angular Universal</span> is implemented in
+            this app. Angular Universal enables
+            <span class="highlight">server-side rendering</span> (SSR), which
+            pre-renders pages on the server before sending them to clients.
+          </p>
+          <div class="project-footer">
+            <div class="tools">
+              <div class="icon-wrapper">
+                <i class="devicon-angularjs-plain colored fa-2x"></i>
+              </div>
+              <div class="icon-wrapper">
+                <i class="devicon-bootstrap-plain colored fa-2x"></i>
+              </div>
+            </div>
+            <div class="code-links">
+              <a
+                href="https://github.com/atetheone/user-generator"
+                rel="noopener noreferrer"
+                target="_blank"
+                class="cta-1"
+              >
+                <i class="fa-brands fa-github"></i>
+                <span class="sr-only">Source code</span>
               </a>
-              <a href="#"> <i class="fa-solid fa-external-link"></i>Live </a>
+              <a
+                href="https://atetheone.tech/user-generator"
+                rel="noopener noreferrer"
+                target="_blank"
+                class="cta-1"
+              >
+                <i class="fas fa-eye"></i>
+                <span class="sr-only"></span>
+              </a>
             </div>
           </div>
         </div>
+      </div>
+      <div class="more-projects">
+        <a
+          href="https://github.com/atetheone?tab=repositories"
+          rel="noopener noreferrer"
+          target="_blank"
+          class="cta-2"
+        >
+          More projects
+          <i class="fas fa-external-link"></i>
+        </a>
       </div>
     </section>
 
@@ -265,6 +386,7 @@
       <div class="contact-content">
         <a
           href="https://www.github.com/atetheone"
+          rel="noopener noreferrer"
           target="_blank"
           id="profile-link"
           class="github brands"
@@ -272,7 +394,12 @@
           <i class="fab fa-github"></i>
           Github
         </a>
-        <a href="https://www.linkedin.com/in/atetheone" class="brands linkedin">
+        <a
+          href="https://www.linkedin.com/in/atetheone"
+          rel="noopener noreferrer"
+          target="_blank"
+          class="brands linkedin"
+        >
           <i class="fab fa-linkedin"></i>
           LinkedIn
         </a>
