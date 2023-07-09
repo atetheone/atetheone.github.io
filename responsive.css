@@ -4,13 +4,6 @@
   }
 }
 
-@media only screen and (max-width: 962px) {
-  .welcome-section {
-    min-height: 83vh !important;
-  }
-}
-
-
 @media only screen and (max-width: 785px) {
   .welcome-content h2 {
     font-size: 1.5rem !important;
