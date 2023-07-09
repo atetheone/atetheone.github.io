@@ -94,24 +94,7 @@
 
 }
 
-@media only screen and (max-width: 365px) {
-  /* .welcome-content, .welcome-right {
-    -moz-height: fit-content !important;
-    height: fit-content !important; 
-    top: 4rem !important;
-  } */
-
-  /* #about {
-    margin-top: 2.5rem !important;
-  } */
-}
-
 @media only screen and (max-width: 348px) {
-
-  /* .welcome-content, .welcome-right{
-    top: 5rem !important;
-  } */
-
   #about {
     margin-top: 4rem !important;
   }

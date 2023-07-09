@@ -1,4 +1,4 @@
-@import "responsive.css";
+@import "responsive.min.css";
 @import "variables.css";
 
 *,
@@ -21,7 +21,7 @@ html {
   scroll-behavior: smooth;
   min-height: 100%;
   overflow-x: hidden;
-  color: hsla(0, 0%, 100%, 0.8);
+  color: rgba(255, 255, 255, .8);
 }
 
 body {
