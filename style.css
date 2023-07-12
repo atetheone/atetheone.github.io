@@ -171,13 +171,13 @@ nav {
   padding: 20px;
 }
 
-.welcome-content h2 {
+.welcome-content h1 {
   font-size: 2rem;
   font-weight: 600;
   text-align: start;
 }
 
-.welcome-content h2.title {
+.welcome-content h1 span.title {
   color: var(--accent);
   font-weight: bold;
   margin: 0;
@@ -406,7 +406,8 @@ nav {
 
 .about-img img {
   border-radius: 50%;
-  background-color: rgba(1, 1, 1, 0.452);
+  /* background-color: rgba(1, 1, 1, 0.452); */
+  background-color: var(--accent);
 }
 
 .skills-title {
@@ -440,7 +441,96 @@ section .description {
   margin-bottom: 20px;
 }
 
+/************************* Certifications *************************/
+.certifications {
+  display: flex;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
+  width: 100%;
+}
 
+.certification {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 30px auto;
+}
+
+.certification-header {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+
+.certification-title {
+  font-size: 1.5em;
+  margin-right: 10px;
+}
+
+.certification-title i {
+  color: var(--accent);
+}
+
+.certification-date {
+  font-style: italic;
+  margin-left: 30px;
+  margin-top: 5px;
+}
+
+.certification-issuer {
+  margin-left: auto;
+  font-size: large;
+  color: var(--accent);
+  font-weight: bold;
+}
+
+.certification .certification-img {
+  /* width: 100%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  border-radius: 5px;
+  /* background-color: aquamarine; */
+}
+
+.certification .certification-img img {
+  border-radius: 5px;
+}
+
+.certification .certification-content {
+  margin: 10px 20px;
+  max-width: 500px;
+}
+
+.certification-desc {
+  text-align: justify;
+}
+
+.certification .skillset {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin: 10px 0;
+}
+
+.certification .skillset .skillset-item {
+  margin: 5px;
+  border-radius: 5px;
+  padding: 5px 10px;
+  background-color: #ccc;
+  color: #000;
+  font-weight: 500;
+}
+
+.more-certifications {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+/************************* Projects *************************/
 .my-projects {
   padding: 20px;
 }
