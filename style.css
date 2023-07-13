@@ -281,23 +281,43 @@ nav {
   /* margin-bottom: 15px; */
   display: flex;
 }
+/*
+.icon-wrapper {
+  margin: 5px;
+  border-radius: 10px;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+}
 
-.contact-links>a {
+.icon-wrapper:hover {
+  border-radius: 13px;
+  transform: scaleX(1.1) scaleY(1.1);
+}
+
+.icon-wrapper i {
+  background-color: rgba(255, 255, 255, 0.4);
+  font-size: 1.5em;
+}*/
+
+.contact-links > a {
   margin: 0 5px !important;
   -webkit-appearance: button;
   -moz-appearance: button;
   appearance: button;
-  border-radius: 50%;
-  border-style: none;
-  /* box-shadow: rgba(255, 255, 255, 0.26) 0 1px 2px inset; */
-  box-sizing: border-box;
-  /* color: #000; */
-  cursor: pointer;
-  display: inline-block;
-  font-size: 100%;
-  line-height: 1;
-  margin: 0;
-  /* padding: 5px; */
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255);
+  width: 40px;
+  height: 40px;
+  color: #000;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   text-transform: none;
   -moz-user-select: none;
@@ -306,40 +326,19 @@ nav {
   touch-action: manipulation;
 }
 
-.contact-links>a:hover {
+.contact-links > a:hover {
   transition: 0.3s;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  transform: scaleX(1.1) scaleY(1.1);
+  color: var(--accent);
 }
-
-
-.contact-links>a:hover:before {
-  content: "";
-  position: absolute;
-  top: -5px;
-  bottom: -5px;
-  left: -5px;
-  right: -5px;
-  border-radius: 10px;
-  box-shadow: inset -1px -1px rgba(255, 255, 255, 0.7),
-    inset -2px -2px rgba(255, 255, 255, 0.5),
-    inset -3px -3px rgba(255, 255, 255, 0.4),
-    inset -4px -4px rgba(255, 255, 255, 0.2),
-    inset -5px -5px rgba(255, 255, 255, 0.1);
-}
-
-/* :hover {
-  background-color: #fcdab7;
-} */
-
 .welcome-right {
-  /*rgb(64, 83, 97, 0.7);*/
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url("assets/experimental-playing-video-games-on-laptop.png");
 
   background-position: center;
   min-width: 40%;
-  /* max-width: 100%; */
 }
 
 .hidden {
@@ -355,9 +354,7 @@ nav {
   opacity: 1;
 }
 
-.preview .speciality {
-  color: #fcdab7;
-}
+
 
 .section {
   min-height: 85vh;
@@ -562,7 +559,7 @@ section .description {
   margin: 15px 0px 10px 0;
 }
 
-.project .icon-wrapper {
+.icon-wrapper {
   margin: 5px;
   border-radius: 10px;
   width: 40px;
@@ -574,12 +571,12 @@ section .description {
   color: #000;
 }
 
-.project .icon-wrapper:hover {
+.icon-wrapper:hover {
   border-radius: 13px;
   transform: scaleX(1.1) scaleY(1.1);
 }
 
-.project .icon-wrapper i {
+.icon-wrapper i {
   background-color: rgba(255, 255, 255, 0.4);
   font-size: 1.5em;
 }
