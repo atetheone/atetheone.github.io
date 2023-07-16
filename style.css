@@ -71,7 +71,7 @@ header {
 a.logo {
   width: 2.5em;
   height: 2em;
-  background-image: url(assets/png/logo-no-background.png);
+  background-image: url(assets/img/logo-no-background.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -314,14 +314,14 @@ nav {
 .welcome-right {
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("assets/experimental-playing-video-games-on-laptop.png");
+  background-image: url("assets/img/experimental-playing-video-games-on-laptop.webp");
 
   background-position: center;
   min-width: 40%;
 }
 
 i.leetcode-icon {
-  background-image: url("assets/png/leetcode.png");
+  background-image: url("assets/img/leetcode.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
